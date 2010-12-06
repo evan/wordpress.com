@@ -1,22 +1,13 @@
-/*
-THEME NAME: Sandbox 1.6.1
-THEME URI: http://www.plaintxt.org/themes/sandbox/
-DESCRIPTION: Rich with powerful and dynamic semantic class selectors, Sandbox is a canvas for CSS artists
-VERSION: 1.6.1-wpcom
-AUTHOR: <a href="http://andy.wordpress.com/">Andy Skelton</a> &amp; <a href="http://www.plaintxt.org/">Scott Allan Wallick</a>
-AUTHOR URI:
-TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
-*/
 
 /* Two-column with sidebar on left from the /examples/ folder  */
-div#container
+#container
 {
 	float:right;
 	width:100%;
 	margin:0 0 0 -200px;
 }
 
-div#content
+#content
 {
 	margin:0 0 0 200px;
 }
@@ -28,12 +19,12 @@ div.sidebar
 	width:180px;
 }
 
-div#secondary
+#secondary
 {
 	clear:left;
 }
 
-div#footer
+#footer
 {
 	clear:both;
 	width:100%;
@@ -47,7 +38,7 @@ div.skip-link
 	top:1em;
 }
 
-div#menu
+#menu
 {
 	background:#EEE;
 	height:1.5em;
@@ -55,7 +46,7 @@ div#menu
 	margin:1em 0;
 }
 
-div#menu ul,div#menu ul ul
+#menu ul,#menu ul ul
 {
 	line-height:1;
 	list-style:none;
@@ -63,7 +54,7 @@ div#menu ul,div#menu ul ul
 	padding:0;
 }
 
-div#menu ul a
+#menu ul a
 {
 	display:block;
 	margin-right:1em;
@@ -71,13 +62,13 @@ div#menu ul a
 	padding:0.2em 0.5em;
 }
 
-div#menu ul li ul
+#menu ul li ul
 {
 	left:-999em;
 	position:absolute;
 }
 
-div#menu ul li:hover ul
+#menu ul li:hover ul
 {
 	left:auto;
 }
@@ -87,7 +78,7 @@ div#menu ul li:hover ul
 	clear:both;
 }
 
-div#container,div#primary
+#container,#primary
 {
 	margin-top:2em;
 }
@@ -180,17 +171,17 @@ div.gallery dl.gallery-columns-5
 	width:19%;
 }
 
-div#nav-above
+#nav-above
 {
 	margin-bottom:1em;
 }
 
-div#nav-below
+#nav-below
 {
 	margin-top:1em;
 }
 
-div#nav-images
+#nav-images
 {
 	height:150px;
 	margin:1em 0;
@@ -250,12 +241,12 @@ div.sidebar ul ul ul li
 	list-style:circle;
 }
 
-div#menu ul li,div.gallery dl,div.navigation div.nav-previous
+#menu ul li,div.gallery dl,div.navigation div.nav-previous
 {
 	float:left;
 }
 
-div#header,div#footer
+#header,#footer
 {
 	text-align:center;
 }
@@ -266,7 +257,7 @@ div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul
 	padding:0;
 }
 
-div#menu ul ul ul a,p.wp-caption-text
+#menu ul ul ul a,p.wp-caption-text
 {
 	font-style:italic;
 }
@@ -274,4 +265,249 @@ div#menu ul ul ul a,p.wp-caption-text
 div.gallery dl.gallery-columns-2,input#author,input#email,input#url,div.navigation div
 {
 	width:49%;
+}
+
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.2r1
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+/* defaults */
+
+p, h1, h2, h3, h4, h5, h6, ul, li {
+  font-size: 14px;
+} h1, h2 {
+  margin: 1em 0px;
+} p {
+  background-color: white;
+  margin-bottom: 1em;
+} 
+
+a {
+  color: #33518f;
+  text-decoration: none;
+} a:hover {
+  text-decoration: underline;
+}
+
+table, td, th {
+  border: none;
+} td, th {
+  padding: 0 14px 7px 0;
+  margin: 0;
+  vertical-align: top;
+} th {
+  text-align: left;
+  padding-top: 5px;
+} 
+
+code, pre {
+  color: #BF6617;
+  font-size: 13px;
+} pre {
+  margin: 14px;
+}
+
+
+/* specific elements */
+
+body {
+  background-color: white;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/bg.gif');
+  background-repeat: repeat-y;
+  font-family: Georgia;
+  color: #0B0D0F;
+} 
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  width: 950px;
+} #access .skip-link {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 977px;
+  height: 983px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/12/splotch_merged.gif');
+}
+
+#container
+{
+  position: relative;
+  z-index: 2;
+	float: right;
+	width: 900px;
+	margin-bottom: -500px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_right.gif');
+}
+
+/* header */
+#header {
+  position: relative;
+  z-index: 2;
+} #blog-title {
+  color: white;
+  font-size: 130px;
+  font-weight: bold;
+  line-height: 158px;
+  margin: 0;
+  text-transform: lowercase;
+} #blog-title a {
+  color: white;
+} #blog-title a:hover {
+  text-decoration: none;
+} #blog-description {
+  font-size: 30px;
+  margin: -35px 0px 0px 15px;
+  font-weight: bold;
+  color: white;
+}
+
+#nav-above {
+  display: none;
+}
+
+/* sidebar */
+
+#menu ul, #access .skip-link a {
+  display: none;
+}
+
+.sidebar, #menu {
+	float:left;
+	overflow: hidden;
+  padding-left: 50px;
+  width: 165px;
+  max-width: 165x;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+} .sidebar h3.widgettitle {
+  margin: 12px 0px 3px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #33518f;
+} div.sidebar ul ul li {
+  font-size: 13px;
+  line-height: 16px;
+  list-style-image: url('http://evanweaver.files.wordpress.com/2010/11/bullet.gif');
+  margin-left: 5px;
+} div.sidebar li {
+  margin: 0;
+} ul.xoxo {
+  width: 125px;
+} .timesince {
+  font-size: 11px;
+  color: #DF8637;  
+}
+
+#menu {
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/sidebar_top.gif');
+  height: 72px;
+} #primary {
+  margin-top: -16px;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/sidebar_mid.gif');
+  background-repeat: repeat-y;
+  text-transform: lowercase;
+} #secondary {
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/sidebar_bottom.gif');
+  height: 200px;
+  margin-top: -18px;
+  background-repeat: no-repeat;
+}
+
+/* posts */
+
+#content {
+  width: 704px;
+  float: right;
+}
+
+.post {
+  line-height: 21px;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_top.gif');
+  background-repeat: no-repeat;
+  padding-top: 50px;
+} .post h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post h2.entry-title {
+  color: #DF8637;
+  font-size: 23px;
+  line-height: 36px;
+  height: 36px;
+  font-weight: bold;
+  margin: -6px 100px 0px 50px;
+  border-bottom: 1px dashed #7089ac;
+  background-color: white;
+} h2.entry-title a {
+  color: #DF8637;
+}
+
+.entry-date {
+  margin: 5px 40px -25px 50px;
+  width: 100%;
+} .entry-date abbr {
+  color: #DF8637;
+  font-size: 14px;
+  text-transform: lowercase;
+} 
+
+.entry-content {
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_mid.gif');
+  background-repeat: repeat-y;
+  padding: 60px 100px 1px 50px;
+} 
+
+.entry-meta {
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_bottom.gif');
+  background-repeat: no-repeat;
+  height: 94px;
+  max-height: 94px;
+  padding: 0 40px 0 50px;  
+  color: #DF8637;
+  font-size: 14px;
+  padding-top: 18px;
+  text-transform: lowercase;
+} .entry-meta .comments-link {
+  background-color: white;
+} .entry-meta a {
+  color: #DF8637;
+}.entry-meta .meta-sep, .entry-meta .author, .entry-meta .cat-links {
+  display: none;
+}
+
+/* footer */
+
+#nav-below {
+  margin: -50px auto 0;
+  text-align: center;
+  width: 40%;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: lowercase;
+  background-color: white;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  left: -200px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_left.gif');
 }
