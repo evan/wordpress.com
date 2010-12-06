@@ -4,10 +4,11 @@
 
 	<title>object allocations on the web « Snax</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="index_files/style.css" type="text/css" media="screen">
-	<link rel="alternate" type="application/rss+xml" title="Snax RSS Feed" href="http://evanweaver.wordpress.com/feed/">
+	<link rel="stylesheet" href="index_files/blank.css" type="text/css" media="screen">
 	<link rel="pingback" href="http://evanweaver.wordpress.com/xmlrpc.php">
-		<link rel="alternate" type="application/rss+xml" title="Snax » object allocations on the&nbsp;web Comments Feed" href="http://evanweaver.wordpress.com/2010/11/30/object-allocations-on-the-web-2/feed/">
+		<link rel="alternate" type="application/rss+xml" title="Snax » Feed" href="http://evanweaver.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Snax » Comments Feed" href="http://evanweaver.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Snax » object allocations on the&nbsp;web Comments Feed" href="http://evanweaver.wordpress.com/2010/11/30/object-allocations-on-the-web-2/feed/">
 <script type="text/javascript">
 /* <![CDATA[ */
 function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
@@ -27,7 +28,7 @@ function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!
 <link rel="shortlink" href="http://wp.me/p1dOab-4L">
 <link rel="shortcut icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48">
 <link rel="icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48">
-<link rel="apple-touch-icon" href="http://s0.wp.com/wp-content/themes/h4/i/webclip.png?m=1256325320g">
+<link rel="apple-touch-icon" href="http://s0.wp.com/wp-content/themes/h4/i/webclip.png?m=1250548519g">
 	<style type="text/css">
 	/* <![CDATA[ */
 				div#likes { margin-top: 15px; }
@@ -54,7 +55,9 @@ function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!
 <link rel="openid.delegate" href="http://evanweaver.wordpress.com/">
 <link rel="search" type="application/opensearchdescription+xml" href="http://evanweaver.wordpress.com/osd.xml" title="Snax">
 <link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com">
-<meta name="application-name" content="Snax"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="a big website blog"><meta name="msapplication-task" content="name=Subscribe;action-uri=http://evanweaver.wordpress.com/feed/;icon-uri=http://s1.wp.com/i/favicon-stacked.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico"><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="index_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="index_files/services.css"></head><body class="wordpress y2010 m11 d30 h14 single postid-295 s-y2010 s-m11 s-d29 s-h18 s-category-uncategorized s-author-evanweaver">
+<meta name="application-name" content="Snax"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="a big website blog"><meta name="msapplication-task" content="name=Subscribe;action-uri=http://evanweaver.wordpress.com/feed/;icon-uri=http://s1.wp.com/i/favicon-stacked.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="index_files/a.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-css" href="index_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="index_files/services.css"></head><body class="wordpress y2010 m12 d06 h00 single postid-295 s-y2010 s-m11 s-d29 s-h18 s-category-uncategorized s-author-evanweaver">
 
 <div id="wrapper" class="hfeed">
 
@@ -155,7 +158,7 @@ dramatically cheaper. And I would expect Java to allocate fewer objects and have
 		<ol>
 									<li id="comment-1589" class="comment c c-y-0001 c-m11 c-d29 c-h16 alt">
 							<div class="comment-author vcard"> <span class="fn n"><a href="http://twitter.com/binary42" rel="external nofollow" class="url url">Brian Mitchell</a></span></div>
-							<div class="comment-meta">Posted November 30, 2010 at 2:16 PM <span class="meta-sep">|</span> <a href="#comment-1589" title="Permalink to this comment">Permalink</a></div>
+							<div class="comment-meta">Posted December 6, 2010 at 12:52 AM <span class="meta-sep">|</span> <a href="#comment-1589" title="Permalink to this comment">Permalink</a></div>
 							<p>Generally allocations take a lot of time on their own.<br>
 Freeing these allocations is also a problem. For example, I had a small bit of code where it would run N iterations per<br>
 second, but if I allocated an array of a few million immediate values 
@@ -194,7 +197,7 @@ life is busy and it takes time to setup a clean environment for measurement. And
 </li>
 						<li id="comment-1590" class="comment c1 c-y-0001 c-m11 c-d29 c-h16">
 							<div class="comment-author vcard"> <span class="fn n"><a href="http://fishbowl.pastiche.org/" rel="external nofollow" class="url url">Charles Miller</a></span></div>
-							<div class="comment-meta">Posted November 30, 2010 at 2:16 PM <span class="meta-sep">|</span> <a href="#comment-1590" title="Permalink to this comment">Permalink</a></div>
+							<div class="comment-meta">Posted December 6, 2010 at 12:52 AM <span class="meta-sep">|</span> <a href="#comment-1590" title="Permalink to this comment">Permalink</a></div>
 							<p>Working in Java, the cost of allocating short-lived objects is
  really small. Allocation just involves pushing a pointer in eden 
 forward sizeof(object), and the vast majority of those objects are 
@@ -205,14 +208,14 @@ about the cost of doing so.</p>
 </li>
 						<li id="comment-1591" class="comment c2 c-y-0001 c-m11 c-d29 c-h16 alt">
 							<div class="comment-author vcard"> <span class="fn n"><a href="http://moonbase.rydia.net/" rel="external nofollow" class="url url">MenTaLguY</a></span></div>
-							<div class="comment-meta">Posted November 30, 2010 at 2:16 PM <span class="meta-sep">|</span> <a href="#comment-1591" title="Permalink to this comment">Permalink</a></div>
+							<div class="comment-meta">Posted December 6, 2010 at 12:52 AM <span class="meta-sep">|</span> <a href="#comment-1591" title="Permalink to this comment">Permalink</a></div>
 							<p>One advantage to JRuby, of course, is that you get to write in
  Ruby but take advantage of all the Java runtime infrastructure like the
  garbage collector.But even there, the less garbage, the better.</p>
 </li>
 						<li id="comment-1592" class="comment c3 c-y-0001 c-m11 c-d29 c-h16">
 							<div class="comment-author vcard"> <span class="fn n"><a href="http://reformatic.com/" rel="external nofollow" class="url url">Andrew</a></span></div>
-							<div class="comment-meta">Posted November 30, 2010 at 2:16 PM <span class="meta-sep">|</span> <a href="#comment-1592" title="Permalink to this comment">Permalink</a></div>
+							<div class="comment-meta">Posted December 6, 2010 at 12:52 AM <span class="meta-sep">|</span> <a href="#comment-1592" title="Permalink to this comment">Permalink</a></div>
 							<p>On a somewhat related note, I have been experimenting with an <a href="http://martinfowler.com/eaaCatalog/identityMap.html" rel="nofollow">IdentityMap</a> in<br>
 rails.</p>
 <p>Here is my incomplete, minimally tested and not ready for production code: <a href="http://gist.github.com/215925" rel="nofollow">http://gist.github.com/215925</a>. From the tests I have made with<br>
@@ -229,7 +232,7 @@ Authors that have the same record id will be exactly the same object, no
 </li>
 						<li id="comment-1593" class="comment c4 c-y-0001 c-m11 c-d29 c-h16 alt">
 							<div class="comment-author vcard"> <span class="fn n"><a href="http://blog.methodmissing.com/" rel="external nofollow" class="url url">Lourens Naudé</a></span></div>
-							<div class="comment-meta">Posted November 30, 2010 at 2:16 PM <span class="meta-sep">|</span> <a href="#comment-1593" title="Permalink to this comment">Permalink</a></div>
+							<div class="comment-meta">Posted December 6, 2010 at 12:52 AM <span class="meta-sep">|</span> <a href="#comment-1593" title="Permalink to this comment">Permalink</a></div>
 							<p>Interesting observations, however I do think in the current 
 Ruby ecosystem it’s somewhat dangerous to focus on interpreter specific<br>
 optimizations and not generalize solutions.I, along with a few coworkers, think the underlying issue is:a) The state of stdlib,<br>
@@ -250,7 +253,7 @@ method dispatch on class Y in a staging environment is interesting also.</p>
 </li>
 						<li id="comment-1594" class="comment c5 c-y-0001 c-m11 c-d29 c-h16">
 							<div class="comment-author vcard"> <span class="fn n"><a href="http://www.javageneration.com/" rel="external nofollow" class="url url">Chaker Nakhli</a></span></div>
-							<div class="comment-meta">Posted November 30, 2010 at 2:16 PM <span class="meta-sep">|</span> <a href="#comment-1594" title="Permalink to this comment">Permalink</a></div>
+							<div class="comment-meta">Posted December 6, 2010 at 12:52 AM <span class="meta-sep">|</span> <a href="#comment-1594" title="Permalink to this comment">Permalink</a></div>
 							<p>An interesting snippet from Daniel Berger transforms hashes to structs on the fly :
 </p><pre>class Hash
    def to_struct(struct_name)
@@ -285,59 +288,73 @@ puts "age: #{foo.age}"
 	<div id="primary" class="sidebar">
 		<ul class="xoxo">
 
-			<li id="text-3" class="widget widget_text">
-				<h3 class="widgettitle">Stuff</h3>
-			<div class="textwidget">Github</div>
+			<li id="nav_menu-2" class="widget widget_nav_menu">
+				<h3 class="widgettitle">meta</h3>
+<div class="menu-meta-container"><ul id="menu-meta" class="menu"><li id="menu-item-423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423"><a href="http://evanweaver.wordpress.com/about/">About</a></li>
+<li id="menu-item-424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-424"><a href="http://resume/">resume</a></li>
+<li id="menu-item-425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-425"><a href="https://github.com/fauna">github</a></li>
+<li id="menu-item-426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-426"><a href="http://cloudbur.st/">cloudburst</a></li>
+<li id="menu-item-427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-427"><a href="http://web2nam.es/">web2names</a></li>
+</ul></div>
+			</li>
+
+			<li id="rss_links-2" class="widget widget_rss_links">
+				<h3 class="widgettitle">subscribe</h3>
+<p><a href="http://evanweaver.wordpress.com/feed/" title="Subscribe to Posts"><img src="index_files/orange-small.png" alt="RSS Feed"></a>&nbsp;<a href="http://evanweaver.wordpress.com/feed/" title="Subscribe to Posts">RSS - Posts</a></p><p><a href="http://evanweaver.wordpress.com/comments/feed/" title="Subscribe to Comments"><img src="index_files/orange-small.png" alt="RSS Feed"></a>&nbsp;<a href="http://evanweaver.wordpress.com/comments/feed/" title="Subscribe to Comments">RSS - Comments</a></p>
+
+			</li>
+		
+			<li id="recent-posts-2" class="widget widget_recent_entries">		
+				<h3 class="widgettitle">recent articles</h3>
+		<ul>
+				<li><a href="http://evanweaver.wordpress.com/2010/11/30/distributed-systems-primer-update-2/" title="distributed systems primer,&nbsp;updated">distributed systems primer,&nbsp;updated</a></li>
+				<li><a href="http://evanweaver.wordpress.com/2010/11/30/object-allocations-on-the-web-2/" title="object allocations on the&nbsp;web">object allocations on the&nbsp;web</a></li>
+				<li><a href="http://evanweaver.wordpress.com/2010/11/30/scribe-client-gem-2/" title="scribe&nbsp;client">scribe&nbsp;client</a></li>
+				<li><a href="http://evanweaver.wordpress.com/2010/11/30/ree-2/" title="ree">ree</a></li>
+				<li><a href="http://evanweaver.wordpress.com/2010/11/30/memcached-gem-release-2/" title="memcached gem&nbsp;release">memcached gem&nbsp;release</a></li>
+				<li><a href="http://evanweaver.wordpress.com/2010/11/30/up-and-running-with-cassandra-2/" title="up and running with&nbsp;cassandra">up and running with&nbsp;cassandra</a></li>
+				</ul>
 		
 			</li>
 		
 			<li id="top-posts" class="widget widget_stats_topposts">			
 				<h3 class="widgettitle">popular</h3>
-			<ul></ul>		
+			<ul><li>None</li></ul>		
+			</li>
+
+			<li id="nav_menu-3" class="widget widget_nav_menu">
+				<h3 class="widgettitle">projects</h3>
+<div class="menu-big-projects-container"><ul id="menu-big-projects" class="menu"><li id="menu-item-428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-428"><a href="http://blog.evanweaver.com/files/doc/fauna/memcached/files/README.html">memcached 1.0</a></li>
+<li id="menu-item-429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-429"><a href="http://blog.evanweaver.com/files/doc/fauna/zookeeper/files/README.html">zookeeper 0.3</a></li>
+</ul></div>
 			</li>
 		</ul>
 	</div><!-- #primary .sidebar -->
 
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
-			<li id="search">
-				<h3><label for="s">Search</label></h3>
+
+			<li id="twitter-2" class="widget widget_twitter">
+				<h3 class="widgettitle"><a href="http://twitter.com/evan">twitter</a></h3>
+<ul class="tweets">
+<li>Feeling really beat. Must have been all the Unreal Tournament last night. <a href="http://twitter.com/evan/statuses/11520327217582081" class="timesince">12&nbsp;hours&nbsp;ago</a></li>
+<li>Overwhelmed by snowboard gear at Sports Basement. <a href="http://twitter.com/evan/statuses/11205189797150720" class="timesince">1&nbsp;day&nbsp;ago</a></li>
+<li>Struggling with this annoying bug in @<a href="http://twitter.com/macspeech">macspeech</a>: <a href="http://t.co/cDNCd4q" rel="nofollow">http://t.co/cDNCd4q</a> <a href="http://twitter.com/evan/statuses/11158693190049792" class="timesince">1&nbsp;day&nbsp;ago</a></li>
+<li>Got a little Christmas present from @<a href="http://twitter.com/priscilla">priscilla</a>. <a href="http://t.co/MqFAWTN" rel="nofollow">http://t.co/MqFAWTN</a> <a href="http://twitter.com/evan/statuses/11151840410345472" class="timesince">1&nbsp;day&nbsp;ago</a></li>
+<li>Snaps! <a href="http://twitter.com/evan/statuses/10900275271303168" class="timesince">2&nbsp;days&nbsp;ago</a></li>
+</ul>
+
+			</li>
+			
+			<li id="search" class="widget widget_search">				
+				<h3 class="widgettitle"><label for="s">search</label></h3>
 				<form id="searchform" class="blog-search" method="get" action="http://evanweaver.wordpress.com">
 					<div>
 						<input id="s" name="s" class="text" size="10" tabindex="1" type="text">
-						<input class="button" value="Find" tabindex="2" type="submit">
+						<input class="button" value="ok" tabindex="2" type="submit">
 					</div>
 				</form>
-			</li>
-
-<li id="linkcat-1356" class="linkcat"><h3>Blogroll</h3>
-	<ul class="xoxo blogroll">
-<li><a href="http://en.forums.wordpress.com/">Discuss</a></li>
-<li><a href="http://www.plinky.com/">Get Inspired</a></li>
-<li><a href="http://polldaddy.com/">Get Polling</a></li>
-<li><a href="http://en.support.wordpress.com/">Get Support</a></li>
-<li><a href="http://learn.wordpress.com/">Learn WordPress.com</a></li>
-<li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
-<li><a href="http://en.blog.wordpress.com/">WordPress.com News</a></li>
-
-	</ul>
-</li>
-
-			<li id="rss-links">
-				<h3>RSS Feeds</h3>
-				<ul>
-					<li><a href="http://evanweaver.wordpress.com/feed/" title="Snax latest posts" rel="alternate" type="application/rss+xml">All posts</a></li>
-					<li><a href="http://evanweaver.wordpress.com/comments/feed/" title="Snax latest comments" rel="alternate" type="application/rss+xml">All comments</a></li>
-				</ul>
-			</li>
-
-			<li id="meta">
-				<h3>Meta</h3>
-				<ul>
-					<li><a href="http://evanweaver.wordpress.com/wp-login.php?action=register">Register</a></li>
-					<li><a href="http://evanweaver.wordpress.com/wp-login.php">Log in</a></li>
-					
-				</ul>
+			
 			</li>
 		</ul>
 	</div><!-- #secondary .sidebar -->
@@ -383,7 +400,7 @@ try{
 
 				var tenMins = new Date();
 				tenMins.setTime( tenMins.getTime() + 600000 );
-				document.cookie = 'wpl_rand=4b6f6015ee; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+				document.cookie = 'wpl_rand=d1da19d381; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
 				
 				jQuery('#wpl-count').after( '\
 					<div id="wpl-mustlogin"> \
@@ -393,7 +410,7 @@ try{
 							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
 							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
 							<input type="hidden" name="redirect_to" value="http://evanweaver.wordpress.com/2010/11/30/object-allocations-on-the-web-2/?like=1" /> \
-							<input type="hidden" name="wpl_rand" value="4b6f6015ee" /> \
+							<input type="hidden" name="wpl_rand" value="d1da19d381" /> \
 							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> \
 						</form> \
 					</div> \
@@ -478,8 +495,8 @@ try{
 <script type="text/javascript" src="index_files/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script src="index_files/w.js" type="text/javascript"></script>
 <script type="text/javascript">
 st_go({'blog':'18067431','v':'wpcom','user_id':'0','post':'295','subd':'evanweaver'});
-ex_go({'crypt':'RDZ8LFkxbXFOeC15QSsxaTNDWXZUUnldZEdZQSw3eUp1TGxUOHlibE9jM2FfMXJneCtySCtuRURmT2JRUCZjaHNNbWVSLHp8eFd8aXVLdllTRE1Wa0JGLkp5YmZPcCVmX29GflN1TSUtViUtV3JBQlddM08xTmNJbjdLK3VJRkhsYm81LmZnei1OTVJqOD1XQm9hcW9sSUN1ZW9mJkZLVXNrPz9rdjJBfHVGLERMWWI0Z2tCT1RTdHBZbEZaQWJqLHBVUllLNS95T2wmY01uSUt2d3JVLCt8M1FffjZnNkgzWTl3cW8='});
+ex_go({'crypt':'RDZ8LFkxbXFOeC15QSsxaTNDWXZUUnldZEdZQSw3eUp1TGw9OE56K0h+SFc/UGo1UDk2MyxNUm8yZHJBWWhHRlF5Mlllc29tY0RIbzl2ZFhLLl85UWkmJnV8aXxfSyZfTHolWG5UU1daK0RKLiZxLiVwSDI0SVlZSy8/Z2xYaHBRNy5UaF1UNjV4UzFpUlB0Ji9qVC4sR3hRfkRNYXQ/bDkwMm41M0w5T0ola1dLRzZFLEE3dmt5em4xVUR1NUJhWnksNE5TQWhNZDVGRXZdNF1IWWIsQldGbzd6YjhQam1qSmlROFstTXMvWU5saUFXdllTNm0mVEdZRnYlZ2UmS1M='});
 addLoadEvent(function(){linktracker_init('18067431',295);});
-	</script><img id="wpstats" src="index_files/g_002.gif" alt=""><img id="wpstats2" src="index_files/g.gif" alt="" style="display: none;">
+	</script><img id="wpstats" src="index_files/g.gif" alt=""><img id="wpstats2" src="index_files/g_002.gif" alt="" style="display: none;">
 
 </body></html>
