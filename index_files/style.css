@@ -459,10 +459,11 @@ body {
 .entry-date {
   margin: 5px 40px -25px 50px;
   width: 100%;
-} .entry-date abbr {
+} .entry-date .published {
   color: #DF8637;
   font-size: 14px;
   text-transform: lowercase;
+  font-style: italic;
 } 
 
 .entry-content {
@@ -496,13 +497,13 @@ body {
   font-size: 0px;
   color: white;
   padding-top: 0px;
-  text-align: center;
-  padding-right: 80px;
-} .single .entry-meta a, .single .entry-meta .published {
-  color: #DF8637;
+} .single .entry-meta .published {
+  color: black;
   font-size: 14px;
   background-color: white;
-} .single .entry-meta a:nth-of-type(1), .single .entry-meta a:nth-of-type(2) {
+  margin-left: -19px;
+	font-style: italic;
+} .single .entry-meta a, .single .nav-previous, .single .nav-next {
   display: none;
 }
 
@@ -524,7 +525,7 @@ body {
   font-weight: bold;
 }
 
-#comments-list {
+#comments-list, .formcontainer {
   margin-top: -60px;
   margin-bottom: 0px;
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_mid.gif');
@@ -558,6 +559,27 @@ body {
   background-repeat: no-repeat;
   height: 94px;
   max-height: 94px;
+}
+
+#respond {
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_bottom.gif');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-bottom: 94px;
+  margin-top: -120px;
+}
+
+#respond h3 {
+  padding: 10px 0 0 50px;
+  font-size: 14px;  
+  margin: 0;
+}
+
+#comment-notes, .form-option input, .form-option p {
+  display: none;
+} .form-label {
+  font-size: 14px;
+  text-transform: lowercase;
 }
 
 /* footer */
