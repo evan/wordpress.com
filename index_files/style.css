@@ -315,8 +315,8 @@ code, pre {
 /* specific elements */
 
 body {
-  background-color: black;
-  /* background-image: url('http://evanweaver.files.wordpress.com/2010/11/bg.gif'); */
+  background-color: white;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/bg.gif');
   background-repeat: repeat-y;
   font-family: Georgia;
   color: #0B0D0F;
@@ -336,7 +336,7 @@ body {
   height: 983px;
   background-repeat: no-repeat;
   background-position: top left;
-  /* background-image: url('http://evanweaver.files.wordpress.com/2010/12/splotch_merged.gif'); */
+  background-image: url('http://evanweaver.files.wordpress.com/2010/12/splotch_merged.gif');
 }
 
 #container
@@ -348,7 +348,7 @@ body {
 	margin-bottom: -500px;
   background-repeat: no-repeat;
   background-position: bottom right;
-  /* background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_right.gif'); */
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_right.gif'); 
 }
 
 /* header */
@@ -608,5 +608,5 @@ body {
   height: 500px;
   background-repeat: no-repeat;
   background-position: bottom left;
-  /* background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_left.gif'); */
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_left.gif');
 }
