@@ -277,14 +277,14 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 
 /* defaults */
 
-p, h1, h2, h3, h4, h5, h6, ul, li {
+p, h1, h2, h3, h4, h5, h6, ul, li, table, tr, td, th {
   font-size: 14px;
 } h1, h2 {
   margin: 1em 0px;
 } p, ul {
   background-color: white;
   margin-bottom: 1em;
-} 
+}
 
 a {
   color: #33518f;
@@ -300,9 +300,11 @@ table, td, th {
   margin: 0;
   vertical-align: top;
 } th {
-  text-align: left;
   padding-top: 5px;
-} 
+  font-weight: bold;
+} table p {
+  margin-bottom: 0;
+}
 
 code, pre {
   color: #BF6617;
@@ -312,7 +314,7 @@ code, pre {
 }
 
 
-/* specific elements */
+/* containers */
 
 body {
   background-color: white;
@@ -352,6 +354,7 @@ body {
 }
 
 /* header */
+
 #header {
   position: relative;
   z-index: 2;
@@ -397,6 +400,10 @@ body {
   font-weight: bold;
   font-size: 13px;
   color: #33518f;
+} .sidebar p {
+  margin-bottom: 0;
+} .sidebar img {
+  vertical-align: text-top;
 } div.sidebar ul ul li {
   font-size: 13px;
   line-height: 16px;
@@ -419,6 +426,8 @@ body {
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/sidebar_mid.gif');
   background-repeat: repeat-y;
   text-transform: lowercase;
+} #primary .tweets li {
+  text-transform: none;
 } #secondary {
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/sidebar_bottom.gif');
   height: 200px;
@@ -551,7 +560,6 @@ body {
   content: '(';
 } .comment-meta .meta-sep {
   display: none;
-} .comment-meta a {
 }
 
 #comments .navigation {
@@ -580,6 +588,8 @@ body {
 } .form-label {
   font-size: 14px;
   text-transform: lowercase;
+} #login {
+  margin-top: 14px;
 }
 
 /* footer */
