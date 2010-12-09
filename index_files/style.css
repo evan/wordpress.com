@@ -277,7 +277,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 
 /* defaults */
 
-p, h1, h2, h3, h4, h5, h6, ul, li, table, tr, td, th {
+p, h1, h2, h3, h4, h5, h6, ul, li {
   font-size: 14px;
 } h1, h2 {
   margin: 1em 0px;
@@ -293,8 +293,9 @@ a {
   text-decoration: underline;
 }
 
-table, td, th {
+table, tr, td, th {
   border: none;
+  font-size: 13px;
 } td, th {
   padding: 0 14px 7px 0;
   margin: 0;
