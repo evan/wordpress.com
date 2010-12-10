@@ -326,7 +326,7 @@ code, pre {
 
 body {
   background-color: white;
-  background-image: url('thttp://evanweaver.files.wordpress.com/2010/11/bg.gif');
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/bg.gif');
   background-repeat: repeat-y;
   font-family: Georgia;
   color: #0B0D0F;
@@ -355,6 +355,7 @@ body {
   z-index: 2;
 	float: right;
 	width: 900px;
+} .home #container {
 	margin-bottom: -500px;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -572,6 +573,7 @@ body {
 
 #comments .navigation {
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_bottom.gif');
+  background-position: top left;
   background-repeat: no-repeat;
   height: 94px;
   max-height: 94px;
