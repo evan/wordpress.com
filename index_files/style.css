@@ -355,8 +355,8 @@ body {
   z-index: 2;
 	float: right;
 	width: 900px;
-} .home #container {
 	margin-bottom: -500px;
+} .home #container {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_right.gif'); 
