@@ -450,7 +450,7 @@ body {
   margin-bottom: 50px;
 }
 
-.post, .page, #comments {
+div.post, div.page, #comments {
   line-height: 21px;
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_top.gif');
   background-repeat: no-repeat;
@@ -532,9 +532,7 @@ body {
 
 .page #comments {
   margin-top: -50px;
-} .page #blog-description {
-  padding-top: 10px;
-}
+} 
 
 /* comments */
 
