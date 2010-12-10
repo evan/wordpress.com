@@ -293,11 +293,13 @@ a {
   text-decoration: underline;
 }
 
-table, tr, td, th {
-  border: none;
+table {
+  margin-bottom: 12px;
+} table, tr, td, th {
+  border: 1px solid #666;
   font-size: 13px;
 } td, th {
-  padding: 0 14px 7px 0;
+  padding: 4px;
   margin: 0;
   vertical-align: top;
 } th {
@@ -307,19 +309,24 @@ table, tr, td, th {
   margin-bottom: 0;
 }
 
+ul, li {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
 code, pre {
+  font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
   color: #BF6617;
-  font-size: 13px;
+  font-size: 12px;
 } pre {
   margin: 14px;
 }
 
-
 /* containers */
 
 body {
-  background-color: white;
-  background-image: url('http://evanweaver.files.wordpress.com/2010/11/bg.gif');
+  background-color: black;
+  background-image: url('thttp://evanweaver.files.wordpress.com/2010/11/bg.gif');
   background-repeat: repeat-y;
   font-family: Georgia;
   color: #0B0D0F;
@@ -443,7 +450,7 @@ body {
   float: right;
 }
 
-.post, .page {
+.post, .page, #comments {
   line-height: 21px;
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_top.gif');
   background-repeat: no-repeat;
@@ -536,7 +543,7 @@ body {
 }
 
 #comments-list, .formcontainer {
-  margin-top: -60px;
+  margin-top: -180px;
   margin-bottom: 0px;
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_mid.gif');
   background-repeat: repeat-y;
