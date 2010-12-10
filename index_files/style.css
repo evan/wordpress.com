@@ -187,11 +187,6 @@ div.gallery dl.gallery-columns-5
 	margin:1em 0;
 }
 
-div.navigation
-{
-	height:1.25em;
-}
-
 div.navigation div.nav-next
 {
 	float:right;
@@ -451,6 +446,10 @@ body {
   float: right;
 }
 
+.home .post { 
+  margin-bottom: 50px;
+}
+
 .post, .page, #comments {
   line-height: 21px;
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_top.gif');
@@ -619,6 +618,7 @@ body {
   background-color: transparent;
 } .nav-previous, .nav-next {
   background-color: white;
+  margin-top: -40px;
 } 
 
 #footer {
@@ -629,4 +629,10 @@ body {
   background-repeat: no-repeat;
   background-position: bottom left;
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/leaves_bottom_left.gif');
+}
+
+#wpstats {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
