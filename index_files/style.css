@@ -487,6 +487,7 @@ div.post, div.page, #comments {
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_mid.gif');
   background-repeat: repeat-y;
   padding: 60px 100px 1px 50px;
+  min-height: 500px;
 } .single .entry-content {
   padding-top: 30px;
 }
@@ -533,6 +534,12 @@ div.post, div.page, #comments {
 .page #comments {
   margin-top: -50px;
 } 
+
+/* error */
+
+#searchform-404 {
+  margin: -420px 0 420px 50px;
+}
 
 /* comments */
 
