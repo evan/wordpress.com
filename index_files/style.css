@@ -302,6 +302,8 @@ table {
   font-weight: bold;
 } table p {
   margin-bottom: 0;
+} .page table, .page tr, .page td, .page th {
+  border: none;
 }
 
 ul, li {
@@ -421,7 +423,11 @@ body {
   width: 125px;
 } .timesince {
   font-size: 11px;
-  color: #DF8637;  
+  color: #DF8637;
+} .widget_search div {
+  height: 45px;
+} .widget_search .button {
+  display: none;
 }
 
 #menu {
