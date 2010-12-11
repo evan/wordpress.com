@@ -351,6 +351,7 @@ body {
 	float: right;
 	width: 900px;
 	margin-bottom: -500px;
+	min-height: 575px;
 } .home #container {
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -406,6 +407,7 @@ body {
   color: #33518f;
 } .sidebar p {
   margin-bottom: 0;
+  font-size: 13px;
 } .sidebar img {
   vertical-align: text-top;
 } div.sidebar ul ul li {
@@ -460,7 +462,7 @@ div.post, div.page, #comments {
   font-weight: bold;
 }
 
-.post h2.entry-title, .page h2.entry-title {
+.post h2.entry-title, .page h2.entry-title, .post h3.entry-title {
   color: #DF8637;
   font-size: 23px;
   line-height: 36px;
@@ -486,8 +488,7 @@ div.post, div.page, #comments {
 .entry-content {
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_mid.gif');
   background-repeat: repeat-y;
-  padding: 60px 100px 1px 50px;
-  min-height: 500px;
+  padding: 50px 100px 1px 50px;
 } .single .entry-content {
   padding-top: 30px;
 }
@@ -495,6 +496,7 @@ div.post, div.page, #comments {
 .entry-meta {
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_bottom.gif');
   background-repeat: no-repeat;
+  background-position: bottom left;
   height: 94px;
   max-height: 94px;
   padding: 0 40px 0 50px;  
@@ -523,6 +525,9 @@ div.post, div.page, #comments {
 	font-style: italic;
 } .single .entry-meta a, .single .nav-previous, .single .nav-next {
   display: none;
+} .single .entry-meta .edit-link a {
+  display: inline;
+  font-size: 14px;
 }
 
 /* page */
@@ -537,8 +542,38 @@ div.post, div.page, #comments {
 
 /* error */
 
-#searchform-404 {
-  margin: -420px 0 420px 50px;
+#searchform-404 div {
+  padding-left: 50px;
+} #s-404 {
+  width: 350px;
+} .error404 .entry-content {
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+/* search */
+
+.search .page-title {
+  line-height: 21px;
+  background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_top.gif');
+  background-repeat: no-repeat;
+  padding: 50px;
+  font-weight: bold;
+  margin: 0px 10px -85px 0px;
+} .search .post.p1 {
+  margin-top: 0;
+} .search .post {
+  margin-top: -125px;
+} .search .post h3.entry-title {
+  font-size: 14px;
+} .search .entry-date abbr {
+  color: black;
+} .search .entry-content {
+  padding-top: 35px;
+} .search .entry-meta {
+  padding-top: 0;
+} .entry-meta a {
+  display: none;
 }
 
 /* comments */
@@ -581,7 +616,7 @@ div.post, div.page, #comments {
   display: none;
 }
 
-#comments .navigation {
+#comments .navigation, #searchform-404 div {
   background-image: url('http://evanweaver.files.wordpress.com/2010/11/post_bottom.gif');
   background-position: top left;
   background-repeat: no-repeat;
