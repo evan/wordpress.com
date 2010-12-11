@@ -502,7 +502,6 @@ div.post, div.page, #comments {
   padding: 0 40px 0 50px;  
   color: #DF8637;
   font-size: 14px;
-  padding-top: 18px;
   text-transform: lowercase;
 } .entry-meta .comments-link {
   background-color: white;
@@ -572,7 +571,7 @@ div.post, div.page, #comments {
   padding-top: 35px;
 } .search .entry-meta {
   padding-top: 0;
-} .entry-meta a {
+} .search .entry-meta a {
   display: none;
 }
 
