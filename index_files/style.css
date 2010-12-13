@@ -272,6 +272,10 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 
 /* defaults */
 
+* {
+    zoom: 1;
+}
+
 p, h1, h2, h3, h4, h5, h6, ul, li {
   font-size: 14px;
 } h1, h2 {
@@ -472,11 +476,10 @@ div.post, div.page, #comments {
   color: #DF8637;
   font-size: 23px;
   line-height: 36px;
-  height: 36px;
+  min-height: 36px;
   font-weight: bold;
   margin: -6px 100px 0px 50px;
   border-bottom: 1px dashed #7089ac;
-  background-color: white;
 } h2.entry-title a {
   color: #DF8637;
 }
